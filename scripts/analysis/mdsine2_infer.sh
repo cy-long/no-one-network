@@ -18,6 +18,8 @@ echo "[*] Writing files to ${MDSINE2_OUT_DIR}"
 export MDSINE2_LOG_INI="${PROJECT_DIR}/scripts/analysis/logging_to_file.ini"
 export LOG_FILEPATH="${MDSINE2_OUT_DIR}/mdsine2_inference_${study_name}.log"
 
+mkdir -p "$(dirname "$LOG_FILEPATH")"
+
 touch $LOG_FILEPATH
 mdsine2 infer \
 		--input $HEALTHY_DSET \
