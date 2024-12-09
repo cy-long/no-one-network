@@ -15,3 +15,5 @@ datasets/gibson/metadata_OTU/plots/
 scripts/differential_abundance/_tmp/
 
 datasets/gibson/output/**/*.pdf
+**/*.log
+**/*.log.*

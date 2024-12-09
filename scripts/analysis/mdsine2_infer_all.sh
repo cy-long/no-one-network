@@ -2,13 +2,13 @@
 set -e
 source analysis/settings.sh
 
-all_seeds=(10 11 12 13 14 15 16 17 19 20)
+# all_seeds=(10 11 12 13 14 15 16 17 19 20)
+all_seeds=(1115 1116)
 
 # Perform inference.
-for seed in ${all_seeds[@]}; do
-	bash analysis/mdsine2_infer.sh $seed
-done
-
+# for seed in ${all_seeds[@]}; do
+# 	bash analysis/mdsine2_infer.sh $seed
+# done
 
 outdir=$MDSINE2_OUT_DIR/merged_studies
 
